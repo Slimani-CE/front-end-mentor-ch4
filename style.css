@@ -19,8 +19,7 @@
 
 body {
     width: 100%;
-    margin-top: 30px;
-    /* height: 100vh; */
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -164,4 +163,10 @@ body {
 
 .creator .name span:hover {
     color: var(--cyan);
+}
+
+@media (max-height: 700px) {
+    body {
+        height: auto;
+    }
 }
