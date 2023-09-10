@@ -168,5 +168,10 @@ body {
 @media (max-height: 700px) {
     body {
         height: auto;
+        flex-direction: column;
+    }
+    .attribution {
+        position: initial;
+        justify-self: flex-end;
     }
 }
