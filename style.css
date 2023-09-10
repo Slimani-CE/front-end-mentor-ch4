@@ -1,0 +1,137 @@
+:root {
+    /* Primary Colors */
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    /* Neutral Colors */
+    --dark-blue-main-bg: hsl(217, 54%, 11%);
+    --dark-blue-card-bg: hsl(216, 50%, 16%);
+    --dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin-top: 30px;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-blue-main-bg);
+}
+
+.attribution {
+    position: absolute;
+    bottom: 10px;
+    color: var(--white);
+}
+
+.attribution a {
+    color: var(--soft-blue);
+}
+
+.container {
+    width: 380px;
+    height: 640px;
+    background-color: var(--dark-blue-card-bg);
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container .img {
+    width: 330px;
+    height: 330px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container .img img {
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.details {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--soft-blue);
+}
+
+.purchase-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.purchase-details .price span {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--cyan);
+}
+
+.purchase-details .days-left span {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--soft-blue);
+}
+.purchase-details .price .currency-icon {
+    float: left;
+    margin-right: 8px;
+}
+
+.purchase-details .days-left .clock-icon {
+    float: left;
+    margin-right: 8px;
+}
+
+.purchase-details img {
+    margin-top: 3px;
+}
+
+.footer .line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--dark-blue-line);
+}
+
+.creator{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.creator .avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid var(--white);
+}
+
+.creator .avatar img {
+    width: 100%;
+}
+
+.creator .name {
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--soft-blue);
+}
+
+.creator .name span {
+    font-weight: 400;
+    color: var(--white);
+}
